@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>CigarSaver - Smart humidor</title>
+
+    <meta name="description" content="This is my HTML5 boilerplate.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="msapplication-TileColor" content="#3385FF">
+    <meta name="theme-color" content="#3385FF">
+
+    <link rel="stylesheet" href="style/screen2.css" />
+
+    <link rel="icon" type="image/png" href="Images/png/TabIconHumidor.jpg">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"
+        integrity="sha256-yr4fRk/GU1ehYJPAs8P4JlTgu0Hdsp4ZKrx8bDEDC3I=" crossorigin="anonymous"></script>
+    <script src="script/app.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="script/chartHumidity.js"></script>
+</head>
+
+<body>
+    <header class="o-row">
+        <div class="o-container">
+            <div class="c-header">
+                <div class="c-header__logo">
+                    <h1 class="c-logo">
+                        <a href="Homescreen.html">
+                            <img class="c--logo__symbol" src="Images/png/Logo.png" alt="CigarSaver logo">
+                        </a>
+                    </h1>
+                </div>
+                <div class="c-header__menu">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="o-row o-row--intro">
+        <div class="o-container">
+            <div class="c-intro o-layout o-layout--align-center">
+                <div class="o-layout__item">
+                    <a href="Humidity.html" class="c-link-cta">
+                        HUMIDITY
+                    </a>
+
+                    <a href="Temperature.html" class="c-link-cta--Temperature">
+                        TEMPERATURE
+                    </a>
+
+                    <a href="Door.html" class="c-link-cta">
+                        DOOR
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="o-row">
+        <div class="o-container">
+            <h1 class="c-lead c-lead--xl">
+                Current
+            </h1>
+        </div>
+    </section>
+
+    <section class="o-section o-section--lg">
+        <div class="o-layout o-layout--justify-center o-layout--align-center">
+            <div class="o-layout__item u-2-of-3-bp2 ">
+                <img class="c-logo__symbol" src="Images/png/Temperature.png" alt="Temperature logo">
+            </div>
+            <div class="o-layout__item u-2-of-3-bp2">
+                <div class="u-max-width-md">
+                    <div class="js-temperature">
+                        <h3 class="js-change-temp">
+                            27.5°
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="o-row o-row--md">
+        <div class="o-container">
+            <div id="chart_div"></div>
+        </div>
+    </section>
+</body>
+
+</html>

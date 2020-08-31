@@ -1,0 +1,14 @@
+{
+    "name": "PetFret",
+    "short_name": "PetFret",
+    "icons": [
+        {
+            "src": "/android-chrome-144x144.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#2d3f8e",
+    "background_color": "#2d3f8e",
+    "display": "standalone"
+}
